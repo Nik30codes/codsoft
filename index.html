@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Light/Dark Mode Toggle -->
+    <div class="theme-toggle">
+      <label class="switch">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider"></span>
+      </label>
+      <span class="theme-label">Dark Mode</span>
+    </div>
+    
+
+    <!-- Calculator -->
+    <div class="calculator">
+      <div class="display" id="display">
+        <img src="https://media.giphy.com/media/ZUEVCzp1WVCNi/giphy.gif?cid=ecf05e471v69lqahjgnlc0vlb1pr8eop9xe8so1z8m7uvxbe&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Luffy GIF" class="luffy-gif">
+        <span id="calc-display">0</span>
+      </div>
+      <div class="buttons">
+        <!-- Scientific and Function Buttons -->
+        <button class="btn operator" data-value="sin">sin</button>
+        <button class="btn operator" data-value="cos">cos</button>
+        <button class="btn operator" data-value="tan">tan</button>
+        <button class="btn operator" data-value="log">log</button>
+        <button class="btn operator" data-value="ln">ln</button>
+        <button class="btn operator" data-value="√">√</button>
+        <button class="btn" data-value="(">(</button>
+        <button class="btn" data-value=")">)</button>
+        <button class="btn operator" data-value="π">π</button>
+        <button class="btn operator" data-value="e">e</button>
+        <button class="btn operator" data-value="x^2">x²</button>
+        <button class="btn operator" data-value="/">÷</button>
+      
+        <!-- Number and Basic Operators -->
+        <button class="btn" data-value="7">7</button>
+        <button class="btn" data-value="8">8</button>
+        <button class="btn" data-value="9">9</button>
+        <button class="btn operator" data-value="*">×</button>
+        <button class="btn" data-value="4">4</button>
+        <button class="btn" data-value="5">5</button>
+        <button class="btn" data-value="6">6</button>
+        <button class="btn operator" data-value="-">−</button>
+        <button class="btn" data-value="1">1</button>
+        <button class="btn" data-value="2">2</button>
+        <button class="btn" data-value="3">3</button>
+        <button class="btn operator" data-value="+">+</button>
+      
+        <!-- New Fourth Line with AC and DEL Buttons -->
+        <button class="btn" data-value="0">0</button>
+        <button class="btn" data-value=".">.</button>
+        <button class="btn operator" data-value="=">=</button>
+        <button class="btn" id="del">DEL</button> <!-- Delete Button -->
+        <button class="btn clear" id="ac">AC</button> <!-- All Clear Button -->
+      </div>
+      
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
